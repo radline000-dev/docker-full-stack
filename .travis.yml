@@ -15,7 +15,9 @@ after_success:
   - docker build -t radline000/docker-frontend ./frontend
   - docker build -t radline000/docker-backend ./backend
   - docker build -t radline000/docker-nginx ./nginx
-  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  
+  - echo "$DOCKER_HUB_PASSWORD" | docker login -u "$DOCKER_HUB_ID" --password-stdin
+  
   - docker push radline000/docker-frontend
   - docker push radline000/docker-backend
   - docker push radline000/docker-nginx

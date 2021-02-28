@@ -31,6 +31,6 @@ after_success:
   bucket_name: elasticbeanstalk-ap-northeast-2-354429491699
   bucket_path: "docker-fullstack-app"
   on:
-    branch: main
+    branch: master
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_ACCESS_KEY

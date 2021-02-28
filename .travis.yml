@@ -28,7 +28,7 @@ after_success:
   region: "ap-northeast-2"
   app: "docker-fullstack-app"
   env: "DockerFullstackApp-env-1"
-  bucket_name: "elasticbeanstalk-ap-northeast-2-354429491699"
+  bucket_name: elasticbeanstalk-ap-northeast-2-354429491699
   bucket_path: "docker-fullstack-app"
   on:
     branch: main
